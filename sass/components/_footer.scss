@@ -1,0 +1,112 @@
+.footer {
+    padding: 60px 0;
+    min-height: 252px;
+    background-color: $background-dark-color;
+}
+
+.address {
+
+    &__item {
+        display:block;
+
+        &:not(:last-child) {
+            margin-bottom: 9px;
+        }
+
+        &--place {
+            margin-bottom: 9px;
+            @include font (400, 14px, 1.714, 0.03em);
+            color: $title-light-color;
+            transition: color $transition-timing;
+    
+            &:hover,
+            &:focus {
+                color: $accent-color;
+            }
+        }
+
+        &--contact {
+            @include font (400, 14px, 1.714, 0.03em);
+            color: $semitransparent-address-color;
+            transition: color $transition-timing;
+    
+            &:hover,
+            &:focus {
+                color: $accent-color;
+            }
+        }
+    }
+
+    &-wrapper {
+        align-content: center;
+        margin-right: 70px;
+    }
+}
+
+.submit {
+    &__email {
+        width: 358px;
+        height: 50px;
+        margin-right: 12px;
+        padding: 15px 16px;
+        border: 1px solid $semitransparent-border-color;
+        border-radius: 4px;
+        background-color: $background-dark-color;
+        color: $title-light-color;
+    }
+
+    &__button {
+        display: flex;
+        align-items: center;
+        width: 200px;
+        height: 50px;
+        padding: 10px 29px;
+        background: $accent-color;
+        border: none;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        @include font (700, 16px, 1.875, 0.06em);
+        color: $title-light-color;
+        cursor: pointer;
+    }
+
+    &__svg {
+        margin-left: 10px;
+        width: 24px;
+        height: 24px;
+        fill: $title-light-color;
+    }
+
+    &__form {
+        display: flex;
+        flex-wrap: nowrap;
+
+        & input::placeholder {
+            @include font (400, 16px, 1.25, 0.03em);
+            color: $semitransparent-address-color;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+    }
+}
+
+
+.join-us {
+    width: 206px;
+    height: 80px;
+    margin-right: 93px;
+}
+
+.join-us__slogan,
+.submit__slogan {
+    display: block;
+    margin-bottom: 20px;
+    @include font (700, 14px, 1.143, 0.03em);
+    text-transform: uppercase;
+    color: $title-light-color;
+}
+
+
+
+
+
+
