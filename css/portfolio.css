@@ -124,6 +124,43 @@ img {
   margin-right: 50px;
 }
 
+.header__menu-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  padding: 0px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: #FFFFFF;
+  cursor: pointer;
+}
+
+.menu-button__svg {
+  width: 18.67px;
+  height: 18.67px;
+  fill: #000000;
+}
+
+.header__menu-button .icon-cross {
+  display: none;
+}
+
+.header__menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.header__menu-button.is-open .icon-menu {
+  display: none;
+}
+
 .active-page {
   position: relative;
   color: #2196F3;
