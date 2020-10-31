@@ -1,7 +1,6 @@
-
 .hero {
+    width: 480px;
     margin: 0 auto;
-    min-width: 480px;
     padding: 118px 0;
     text-align: center;
     background-image: linear-gradient(
@@ -11,34 +10,15 @@
     url(../images/hero/bg-mobile.jpg);
     background-repeat: no-repeat;
     background-color: $hero-bg;
-    background-size: cover;
+
 
     &__title {
-        
         margin-bottom: 30px;
         min-width: 360px;
-        height: 84px;
         @include font (900, 26px, 1.615, 0.06em);
         text-transform: uppercase;
         color: $title-light-color;
     }  
 }
-    
-@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
-    screen and (min-resolution: 192dpi) and (max-width: 767px),
-    screen and (min-resolution: 2dppx) and (max-width: 767px) {
-    .hero {
-        background-image: linear-gradient(
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)
-        ),
-        url("../images/hero/bg-mobile@2x.jpg");
-    }
-}
-
-
-
-
-
 
 
