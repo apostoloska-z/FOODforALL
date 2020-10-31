@@ -1,10 +1,15 @@
+.header {
+    position: relative;
+}
 
 .header__link {
     padding: 15px 0;
 }
 
 .navigation {
+    display:flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .navigation__list {
@@ -54,6 +59,18 @@
 
 .header__menu-button.is-open .icon-menu {
     display: none;
+}
+
+.header__menu-container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+}
+
+.header__menu-container.is-open {
+    display: block;
 }
 
 
