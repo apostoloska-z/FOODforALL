@@ -4,3 +4,9 @@
     text-align: center;
     color: $title-dark-color;
 }
+
+@media screen and (min-width:1200px) {
+    .section-title {
+        @include font (700, 36px, 1.167, 0.03em);
+    }
+}
