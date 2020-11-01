@@ -141,7 +141,7 @@
 
 .modal-form__checkbox-label {
     display: inline-block;
-    margin-bottom: 31px;
+    margin-bottom: 30px;
     @include font (400, 12px, 1.167, 0.03em);
     color: $description-color;
 
@@ -172,7 +172,16 @@
 }
 
 
+@media screen and (min-width:1200px) {
+    .modal {
+        width: 528px;
+        height: 581px;
+    }
 
+    .modal-form__checkbox-label {
+        @include font (400, 14px, 1.714, 0.03em);
+    }
+}
 
 
 

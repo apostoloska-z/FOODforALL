@@ -1,5 +1,6 @@
 .hero {
     width: 480px;
+    height: 400px;
     margin: 0 auto;
     padding: 118px 0;
     text-align: center;
@@ -20,5 +21,36 @@
         color: $title-light-color;
     }  
 }
+
+@media screen and (min-width:768px) {
+    .hero {
+        width: 768px;
+        background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero/bg-tablet.jpg);
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .hero {
+        width:100%;
+        height: 600px;
+        padding: 200px 0;
+        background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero/bg-desktop.jpg);}
+
+    .hero__title {
+        min-width: 696px;
+        @include font (900, 44px, 1.364, 0.06em);
+        text-transform: uppercase;
+        color: $title-light-color;
+    }  
+}
+
 
 
