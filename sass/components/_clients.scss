@@ -3,7 +3,8 @@
 }
 
 .clients__list {
-    @extend %flex-align;
+    display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
  
     &-link {
