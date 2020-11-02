@@ -679,6 +679,7 @@ img {
 .projects {
   padding: 60px 0;
   border-top: 1px solid #ECECEC;
+  min-width: 480px;
 }
 
 .projects__filter-list {
