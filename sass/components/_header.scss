@@ -9,7 +9,7 @@
     display: block;
     margin-right: auto;
     margin-left: auto;
-    width: 480 px;
+    width: 480px;
 
 
     &-link {
@@ -87,9 +87,7 @@
         }
     }
 
-    &__item:not(:last-child) {
-        margin-bottom: 16px;
-    }
+
 
     &__item {
         display: block;
@@ -100,8 +98,6 @@
 .contact-list__link:focus .contact-list__svg {
     fill: $accent-color;
 }
-
-
 
 .header__menu-button {
     display: inline-flex;
@@ -154,7 +150,6 @@
   
     }
 
-
     .header-mobile {
         display: flex;
         align-items: center;
@@ -191,26 +186,46 @@
 
     .contact-list__item {
         text-align: center;
+        
+        &:not(:last-child) {
+            margin-bottom: 16px;
+        }
     }
 }
 
 @media screen and (min-width:768px) {
     .header {
-        max-height: 80px;
+        display: flex;
+        align-content: center;
+                        
+        & .container {
+            height: 80px;
+            align-items: center;
+        }
 
         & .active-page {
             padding-bottom: 29px;
         }
     }
 
+    .navigation {
+        height: 100%;
+    }
 
     .navigation .header__menu-container {
         display: flex;
+        align-items: center;
+        height: 80px;
+        width: inherit;
     }
 
+  
     .navigation__list {
         display: flex;
+        align-items: center;
         margin-right: 84px;
+        height: 100%;
+        width: 100%;
     
         &-link {
             @include font (500, 14px, 1.143, 0.02em);
@@ -219,37 +234,40 @@
         &-item:not(:last-child) {
             margin-right: 50px;
         }
-    }
 
+        &-item {
+            height: 14px;
+        }
+    }
+}
+
+
+@media screen and (min-width:768px) and (max-width:1199px) {
     .contact-list {
 
         display: block;
-        margin-right:0;
          
         &__link {
             @include font (500, 12px, 1.167, 0.02em);
+            justify-content: left;
         }
 
         &__item:not(:last-child) {
             margin-bottom: 10px;
         }
-    }
 
-    .header {
-        display: flex;
-        padding: 25px 0;
-        height: 80px;
-    }
-
-    .header__menu-container {
-        height: 90px;
+        &__item {
+            text-align: left;
+        }
     }
 }
+
 
 @media screen and (min-width:1200px) {
     .contact-list {
         display: flex;
-        height: 16px;
+        justify-content: end;
+        align-items: center;
 
         &__item:not(:last-child) {
             margin-right: 30px;
@@ -257,6 +275,8 @@
 
         &__link {
             @include font (500, 14px, 1.143, 0.02em);
+            height:14px;
+            width: max-content;
         }
     }
 
