@@ -76,11 +76,6 @@
         fill: $description-color;
         transition: fill $transition-timing;
 
-        .contact-list-link:hover &,
-        .contact-list-link:focus & {
-            fill: $accent-color;
-        }
-
         &--envelope {
             width: 16px;
             height: 12px;
@@ -88,7 +83,7 @@
 
         &--smartphone {
             width: 10px;
-            height: 16px;;
+            height: 16px;
         }
     }
 
@@ -99,6 +94,11 @@
     &__item {
         display: block;
     }
+}
+
+.contact-list__link:hover .contact-list__svg,
+.contact-list__link:focus .contact-list__svg {
+    fill: $accent-color;
 }
 
 
