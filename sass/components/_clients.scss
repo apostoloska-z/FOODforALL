@@ -64,7 +64,7 @@
     }
 }
 
-@media screen and (min-width:350px) and (max-width:767px) {
+@media screen and (max-width:767px) {
     .clients__list-item:nth-child(2n+1) {
         margin-right: 30px;
     }

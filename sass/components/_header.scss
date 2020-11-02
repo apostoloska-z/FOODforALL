@@ -1,14 +1,8 @@
-.header {
-    position: relative;
-    height: 60px;
-    min-width: 480px;
-    padding: 16px 0;
-}
-
 .navigation {
     display:flex;
     align-content: center;
-    justify-content: space-between;
+    align-items: baseline;
+
 }
 
 .navigation__list {
@@ -16,7 +10,6 @@
     margin-right: auto;
     margin-left: auto;
     width: 480 px;
-    margin-bottom: 60px;
 
 
     &-link {
@@ -36,59 +29,6 @@
     }
 }
 
-.navigation__list-item:not(:last-child) {
-   margin-bottom: 40px;
-}
-
-.header__menu-button {
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    border: none;
-    background-color: $title-light-color;
-    cursor: pointer;
-}
-
-.menu-button__svg {
-    width:18.67px;
-    height:18.67px;
-    fill: $logo-dark-color;
-
-    .header__menu-button:focus &,
-    .header__menu-button:hover & {
-        fill: $accent-color;
-    }
-}
-
-.header__menu-button .icon-cross {
-    display: none;
-}
-
-.header__menu-button.is-open .icon-cross {
-    display: block;
-}
-
-.header__menu-button.is-open .icon-menu {
-    display: none;
-}
-
-
-.header__menu-container {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    padding: 60px 20px;
-    width: 100%;
-    height: 393px;
-    background-color: $title-light-color;
-    border-top: 1px $section-border-color;
-}
-
-.header__menu-container.is-open {
-    display: block;
-}
 
 .active-page {
     text-align: center;
@@ -158,9 +98,159 @@
 
     &__item {
         display: block;
-        align-items: center;
     }
 }
+
+
+
+.header__menu-button {
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: $title-light-color;
+    cursor: pointer;
+}
+
+.menu-button__svg {
+    width:18.67px;
+    height:18.67px;
+    fill: $logo-dark-color;
+
+    .header__menu-button:focus &,
+    .header__menu-button:hover & {
+        fill: $accent-color;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .header__menu-button {
+        display: none;
+    }
+}
+
+
+.header__menu-button .icon-cross {
+    display: none;
+}
+
+.header__menu-button.is-open .icon-cross {
+    display: block;
+}
+
+.header__menu-button.is-open .icon-menu {
+    display: none;
+}
+
+.header__menu-container.is-open {
+    display: block;
+}
+
+@media screen and (max-width:767px) {
+    .header {
+        position: relative;
+        max-height: 60px;
+        min-width: 480px;
+        padding: 16px 0;
+    }
+
+    .navigation {
+        justify-content: space-between;
+    }
+
+    .navigation__list {
+        margin-bottom: 60px;
+    }
+
+    .navigation__list-item:not(:last-child) {
+        margin-bottom: 40px;
+    }
+
+    .header__menu-container {
+        display:none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        padding: 60px 20px;
+        width: 100%;
+        height: 393px;
+        background-color: $title-light-color;
+        border-top: 1px $section-border-color;
+    }
+
+    .contact-list__item {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .header {
+        max-height: 80px;
+
+        & .active-page {
+            padding-bottom: 27px;
+        }
+    }
+
+
+    .navigation .header__menu-container {
+        display: flex;
+    }
+
+    .navigation__list {
+        display: flex;
+        margin-right: 84px;
+    
+        &-link {
+            @include font (500, 14px, 1.143, 0.02em);
+        }
+    
+        &-item:not(:last-child) {
+            margin-right: 50px;
+        }
+    }
+
+    .contact-list {
+
+        display: block;
+        margin-right:0;
+         
+        &__link {
+            @include font (500, 12px, 1.167, 0.02em);
+        }
+
+        &__item:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+
+    .header {
+        display: flex;
+        padding: 25px 0;
+        height: 80px;
+    }
+ }
+
+@media screen and (min-width:1200px) {
+    .contact-list {
+        display: flex;
+        height: 16px;
+
+        &__item:not(:last-child) {
+            margin-right: 30px;
+        }
+
+        &__link {
+            @include font (500, 14px, 1.143, 0.02em);
+        }
+    }
+
+    .navigation__list {
+        margin-right: 305px;
+    }
+}
+
 
 
 
