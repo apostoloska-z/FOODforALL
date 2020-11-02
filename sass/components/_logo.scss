@@ -2,7 +2,7 @@
     display:block;
     font-family: $logo-font;
     font-style: normal;
-    @include font (700, 26px, 1.192, 0.03em);
+    @include font (700, 24px, 1.192, 0.03em);
     color: $accent-color;
 
     .header & {
@@ -10,6 +10,12 @@
 
         &--reverse {
             color: $logo-dark-color;
+        }
+    }
+
+    @media screen and (min-width:1200px)  {
+        .logo {
+            @include font (700, 2px, 1.192, 0.03em);
         }
     }
 

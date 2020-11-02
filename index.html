@@ -15,13 +15,15 @@
     <header class="header">
         <div class="container">
             <nav class="navigation">
-                <a class="logo header__link link" href="./index.html" aria-label="WebStudio" lang="en">Web<span class="logo--reverse">Studio</span></a>
-                <button type="button" class="header__menu-button is-open" aria-expanded="false" aria-controls="header__menu-container" data-menu-button>
-                    <svg class="menu-button__svg" aria-label="переключатель мобильного меню">
-                        <use class="icon-menu" href="./images/svg/sprite.svg#icon-envelope"> </use>
-                        <use class="icon-cross" href="./images/svg/sprite.svg#icon-vector"> </use>
-                    </svg>
-                </button>
+                <div class="header-mobile">
+                    <a class="logo header__link link" href="./index.html" aria-label="WebStudio" lang="en">Web<span class="logo--reverse">Studio</span></a>
+                    <button type="button" class="header__menu-button is-open" aria-expanded="false" aria-controls="header__menu-container" data-menu-button>
+                        <svg class="menu-button__svg" aria-label="переключатель мобильного меню">
+                            <use class="icon-menu" href="./images/svg/sprite.svg#icon-menu"> </use>
+                            <use class="icon-cross" href="./images/svg/sprite.svg#icon-close"> </use>
+                        </svg>
+                    </button>
+                </div>
                 <div class="header__menu-container is-open" id="menu-container" data-menu>
                     <ul class="navigation__list list">
                         <li class="navigation__list-item">
