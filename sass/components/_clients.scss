@@ -1,11 +1,12 @@
 .clients {
     padding: 60px 0;
-    width: 480px;
+    min-width: 480px;
 }
 
 .clients__list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
  
     &-link {
         @extend %flex-align;

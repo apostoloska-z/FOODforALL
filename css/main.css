@@ -41,7 +41,7 @@ img {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .container {
     width: 480px;
   }
@@ -120,6 +120,7 @@ img {
 .header {
   position: relative;
   height: 60px;
+  min-width: 480px;
   padding: 16px 0;
 }
 
@@ -306,6 +307,7 @@ img {
   padding: 60px 0;
   min-height: 603px;
   background-color: #2F303A;
+  min-width: 480px;
 }
 
 .address__item {
@@ -1054,7 +1056,7 @@ img {
 .team {
   padding: 60px 0;
   background: #F5F4FA;
-  width: 480px;
+  min-width: 480px;
 }
 
 .team__list-item {
@@ -1106,6 +1108,9 @@ img {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .team__list-item {
     width: 354px;
@@ -1137,7 +1142,7 @@ img {
 
 .clients {
   padding: 60px 0;
-  width: 480px;
+  min-width: 480px;
 }
 
 .clients__list {
@@ -1146,6 +1151,9 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .clients__list-link {
