@@ -138,6 +138,10 @@ img {
   }
 }
 
+.header {
+  min-width: 480px;
+}
+
 .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -153,7 +157,6 @@ img {
   display: block;
   margin-right: auto;
   margin-left: auto;
-  width: 480px;
 }
 
 .navigation__list-item {
