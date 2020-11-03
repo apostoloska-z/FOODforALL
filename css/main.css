@@ -797,7 +797,7 @@ img {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   letter-spacing: 0.03em;
   color: #212121;
 }
@@ -975,10 +975,16 @@ img {
     width: 450px;
     height: 609px;
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%) scale(1);
             transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    top: 90%;
   }
 }
 
@@ -986,6 +992,13 @@ img {
   .modal {
     width: 528px;
     height: 581px;
+    top: 78%;
+  }
+  .modal-slogan {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
   }
   .modal-form__checkbox-label {
     font-weight: 400;
