@@ -1,7 +1,6 @@
 .projects {
     padding: 60px 0;
     border-top: 1px $section-border-color;
-    min-width: 480px;
 }
 
 .projects__filter-list {
@@ -42,10 +41,7 @@
 
 .projects__list {
 
-    &-item {
-        width: 450px;
-        height: 404px
-    }
+
 
     &-item:not(:last-child){
         margin-bottom: 30px;
@@ -112,7 +108,13 @@
     .projects__list-link:focus & {
         transform: translateY(0); 
     }
- }
+}
+
+@media screen and (min-width: 480px) {
+    projects__list-item {
+        width: 450px;
+    }
+}
 
 @media screen and (min-width:768px) {
 
@@ -129,6 +131,7 @@
         width: 354px;
     }
 }
+
 
 @media screen and (min-width:768px) and (max-width:1119px) {
     .projects__list-item:nth-child(2n+1){

@@ -9,11 +9,10 @@
 }
 
 .advantages__list-item {
-    width: 450px;
-
-    &:not(:last-child) {
-        margin-bottom: 30px;
-    }
+    
+    @media screen and (min-width: 480px) {
+        width: 450px;
+      }
 }
 
 .advantages__list-subtitle {
@@ -85,7 +84,7 @@
     }
 }
 
-@media screen and (max-width:1199px) {
+@media screen and (min-width:768px) and (max-width:1199px) {
     
     .advantages__list-item {
 

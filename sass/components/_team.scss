@@ -1,15 +1,12 @@
 .team {
     padding: 60px 0;
     background: $background-light-color;
-    min-width: 480px;
 }
 
 
 .team__list {
     
     &-item {
-        width: 450px;
-        height: 622px;
         background-color: $title-light-color;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
@@ -37,6 +34,13 @@
     }
 }
 
+@media screen and (min-width:480px) {
+    .team__list-item {
+    width: 450px;
+    height: 622px;
+    }
+}
+
 @media screen and (max-width:767px) {
     .team__list-item:not(:last-child) {
         margin-bottom: 30px;
@@ -57,7 +61,7 @@
     }
 }
 
-@media screen and (max-width:1199px) {
+@media screen and (min-width:768px) and (max-width:1199px) {
     
     .team__list-item {
 
