@@ -7,64 +7,66 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
  
-    &-link {
-        @extend %flex-align;
-        align-items: center;
-        width: 210px;
-        height: 90px;
-        border: 1px solid $icon-color;
-        border-radius: 4px;
+.clients__list-link {
+    @extend %flex-align;
+    align-items: center;
+    width: 210px;
+    height: 90px;
+    border: 1px solid $icon-color;
+    border-radius: 4px;
         transition: border-color $transition-timing;
 
-        &:hover,
-        &:focus {
-        border-color: $accent-color;
-        }
-    }
-
-    &-svg {
-        fill: $icon-color;
-        transition: fill $transition-timing;
-
-        .clients__list-link:hover &,
-        .clients__list-link:focus & {
-        fill: $accent-color;
-        }
-
-        &--logo-1 {
-            width: 44.27px;
-            height: 49.23px;
-        }
-
-        &--logo-2 {
-            width: 40px;
-            height: 52px;
-        }
-
-        &--logo-3 {
-            width: 41px;
-            height: 42.6px;
-        }
-
-        &--logo-4 {
-            width: 79.66px;
-            height: 42.02px;
-        }
-
-        &--logo-5 {
-            width: 59px;
-            height: 47px;
-        }
-
-        &--logo-6 {
-            width: 88.48px;
-            height: 45.44px;
-        }
+    &:hover,
+    &:focus {
+    border-color: $accent-color;
     }
 }
 
+.clients__list-svg {
+    fill: $icon-color;
+    transition: fill $transition-timing;
+
+    .clients__list-link:hover &,
+    .clients__list-link:focus & {
+    fill: $accent-color;
+    }
+
+    &--logo-1 {
+        width: 44.27px;
+        height: 49.23px;
+    }
+
+    &--logo-2 {
+        width: 40px;
+        height: 52px;
+    }
+
+    &--logo-3 {
+        width: 41px;
+        height: 42.6px;
+    }
+
+    &--logo-4 {
+        width: 79.66px;
+        height: 42.02px;
+    }
+
+    &--logo-5 {
+        width: 59px;
+        height: 47px;
+    }
+
+    &--logo-6 {
+        width: 88.48px;
+        height: 45.44px;
+    }
+}
+
+
 @media screen and (max-width:767px) {
+    
     .clients__list-item:nth-child(2n+1) {
         margin-right: 30px;
     }
@@ -74,7 +76,7 @@
 }
 
 @media screen and (min-width:768px) {
-
+    
     .clients__list-link {
         width: 226px;
     }
@@ -98,6 +100,7 @@
 
 
 @media screen and (min-width: 1200px) {
+    
     .clients {
         padding: 94px 0;
     }

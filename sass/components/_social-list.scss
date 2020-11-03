@@ -4,39 +4,39 @@
     &__item:not(:last-child) {
         margin-right: 10px;
     }
+}
 
-    &__link {
-        @extend %flex-align;
-        align-items: center;
-        width:44px;
-        height:44px;
-        border-radius: 50%;
-        transition: background-color $transition-timing;
+.social-list__link {
+    @extend %flex-align;
+    align-items: center;
+    width:44px;
+    height:44px;
+    border-radius: 50%;
+    transition: background-color $transition-timing;
 
-        .footer & {
-            background-color: $footer-social-bg;
-        }
-
-        &:hover,
-        &:focus {
-        background-color: $accent-color;
-        }
+    .footer & {
+        background-color: $footer-social-bg;
     }
 
-    &__svg {
-        width: 20px;
-        height: 20px;
-        fill: $icon-color;
-        transition: fill $transition-timing;
+    &:hover,
+    &:focus {
+    background-color: $accent-color;
+    }
+}
 
-        .footer & {
-            fill: $title-light-color;
-        }
+.social-list__svg {
+    width: 20px;
+    height: 20px;
+    fill: $icon-color;
+    transition: fill $transition-timing;
 
-        .social-list__link:hover &,
-        .social-list__link:focus & {
+    .footer & {
         fill: $title-light-color;
-        }
+    }
+
+    .social-list__link:hover &,
+    .social-list__link:focus & {
+    fill: $title-light-color;
     }
 }
 

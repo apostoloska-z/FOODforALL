@@ -5,44 +5,44 @@
     min-width: 480px;
 }
 
-.address {
     
-    &__item {
-        display:block;
+.address__item {
+    display:block;
         
-        &:not(:last-child) {
-            margin-bottom: 9px;
-        }
-
-        &--place {
-            margin-bottom: 9px;
-            @include font (400, 14px, 1.714, 0.03em);
-            color: $title-light-color;
-            transition: color $transition-timing;
-    
-            &:hover,
-            &:focus {
-                color: $accent-color;
-            }
-        }
-
-        &--contact {
-            @include font (400, 14px, 1.714, 0.03em);
-            color: $semitransparent-address-color;
-            transition: color $transition-timing;
-    
-            &:hover,
-            &:focus {
-                color: $accent-color;
-            }
-        }
-    }
-
-    &-wrapper {
-        align-content: center;
-        margin: 0 auto;
+    &:not(:last-child) {
+        margin-bottom: 9px;
     }
 }
+
+.address__item--place {
+    margin-bottom: 9px;
+    @include font (400, 14px, 1.714, 0.03em);
+    color: $title-light-color;
+    transition: color $transition-timing;
+    
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+
+.address__item--contact {
+    @include font (400, 14px, 1.714, 0.03em);
+    color: $semitransparent-address-color;
+    transition: color $transition-timing;
+    
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+    
+
+.address-wrapper {
+    align-content: center;
+    margin: 0 auto;
+}
+
 
 .join-us {
     width: 206px;
@@ -93,19 +93,17 @@
         height: 24px;
         fill: $title-light-color;
     }
-
-    &__form {
-
-        & input::placeholder {
-            @include font (400, 16px, 1.25, 0.03em);
-            color: $semitransparent-address-color;
-            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-            width: 100%;
-        }
-    }
 }
 
+.submit__form input::placeholder {
+        @include font (400, 16px, 1.25, 0.03em);
+        color: $semitransparent-address-color;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        width: 100%;
+}  
+
 @media screen and (max-width:767px) {
+
     .address {
         margin-bottom: 60px;
     }
@@ -150,6 +148,7 @@ and (min-width:768px) {
 }
 
 @media screen and (min-width:768px) and (max-width:1119px) {
+
     .tablet-wrapper {
         margin-bottom: 60px;
     }
@@ -160,6 +159,7 @@ and (min-width:768px) {
 }
 
 @media screen and (min-width:1200px) {
+
     .footer .container {
         display: flex;
         flex-wrap: wrap;

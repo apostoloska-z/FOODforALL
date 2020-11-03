@@ -16,7 +16,6 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  min-width: 480px;
 }
 
 .list {
@@ -157,6 +156,10 @@ img {
   width: 480px;
 }
 
+.navigation__list-item {
+  text-align: center;
+}
+
 .navigation__list-link {
   font-weight: 500;
   font-size: 18px;
@@ -169,10 +172,6 @@ img {
 
 .navigation__list-link:hover, .navigation__list-link:focus {
   color: #2196F3;
-}
-
-.navigation__list-item {
-  text-align: center;
 }
 
 .active-page {
