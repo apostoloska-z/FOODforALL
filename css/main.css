@@ -84,20 +84,11 @@ img {
 }
 
 .header .logo {
-  margin-right: 93px;
+  margin-right: 88px;
 }
 
 .header .logo--reverse {
   color: #000000;
-}
-
-@media screen and (min-width: 1200px) {
-  .logo .logo {
-    font-weight: 700;
-    font-size: 2px;
-    line-height: 1.192;
-    letter-spacing: 0.03em;
-  }
 }
 
 .footer .logo {
@@ -106,6 +97,27 @@ img {
 
 .footer .logo--reverse {
   color: #FFFFFF;
+}
+
+@media screen and (min-width: 768px) {
+  .header .logo {
+    margin-right: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.192;
+    letter-spacing: 0.03em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header .logo {
+    margin-right: 93px;
+  }
 }
 
 .section-title {
@@ -364,7 +376,7 @@ img {
         -ms-flex-align: center;
             align-items: center;
     height: 80px;
-    width: inherit;
+    width: 100%;
   }
   .navigation__list {
     display: -webkit-box;
@@ -373,7 +385,7 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-right: 84px;
+    margin-right: 83px;
     height: 100%;
     width: 100%;
   }
@@ -968,7 +980,7 @@ img {
 }
 
 .hero {
-  width: 480px;
+  min-width: 480px;
   min-height: 400px;
   margin: 0 auto;
   padding: 118px 0;
@@ -1000,7 +1012,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .hero {
-    width: 768px;
+    min-width: 768px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/bg-tablet.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg-tablet.jpg);
   }
@@ -1015,7 +1027,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .hero {
-    width: 100%;
+    min-width: 1200px;
     padding: 200px 0;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/bg-desktop.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg-desktop.jpg);

@@ -84,20 +84,11 @@ img {
 }
 
 .header .logo {
-  margin-right: 93px;
+  margin-right: 88px;
 }
 
 .header .logo--reverse {
   color: #000000;
-}
-
-@media screen and (min-width: 1200px) {
-  .logo .logo {
-    font-weight: 700;
-    font-size: 2px;
-    line-height: 1.192;
-    letter-spacing: 0.03em;
-  }
 }
 
 .footer .logo {
@@ -106,6 +97,27 @@ img {
 
 .footer .logo--reverse {
   color: #FFFFFF;
+}
+
+@media screen and (min-width: 768px) {
+  .header .logo {
+    margin-right: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.192;
+    letter-spacing: 0.03em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header .logo {
+    margin-right: 93px;
+  }
 }
 
 .section-title {
@@ -364,7 +376,7 @@ img {
         -ms-flex-align: center;
             align-items: center;
     height: 80px;
-    width: inherit;
+    width: 100%;
   }
   .navigation__list {
     display: -webkit-box;
@@ -373,7 +385,7 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-right: 84px;
+    margin-right: 83px;
     height: 100%;
     width: 100%;
   }
