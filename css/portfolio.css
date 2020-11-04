@@ -16,6 +16,13 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  padding-top: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    padding-top: 80px;
+  }
 }
 
 .list {
@@ -139,7 +146,13 @@ img {
 }
 
 .header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
   border-bottom: 1px solid #ECECEC;
+  background-color: #FFFFFF;
+  z-index: 100;
 }
 
 .navigation {
@@ -300,9 +313,6 @@ img {
 }
 
 @media screen and (max-width: 767px) {
-  .header {
-    position: relative;
-  }
   .header-mobile {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -635,7 +645,7 @@ img {
   }
 }
 
-@media screen and (max-width: 1119px) {
+@media screen and (max-width: 1199px) {
   .footer {
     text-align: center;
   }
@@ -651,7 +661,7 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1119px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .tablet-wrapper {
     margin-bottom: 60px;
   }
@@ -886,7 +896,7 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1119px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .projects__list-item:nth-child(2n+1) {
     margin-right: 30px;
   }

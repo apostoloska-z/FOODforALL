@@ -1,5 +1,11 @@
 .header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
     border-bottom: 1px $section-border-color;
+    background-color: $title-light-color;
+    z-index: 100;
 }
 
 .navigation {
@@ -139,9 +145,6 @@
 }
 
 @media screen and (max-width:767px) {
-    .header {
-        position: relative;
-    }
 
     .header-mobile {
         display: flex;
@@ -189,7 +192,8 @@
     .header {
         display: flex;
         align-content: center;
-                        
+
+        
         & .container {
             height: 80px;
             align-items: center;
