@@ -984,17 +984,10 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .modal {
-    top: 90%;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
     height: 581px;
-    top: 70%;
   }
   .modal-slogan {
     font-weight: 700;

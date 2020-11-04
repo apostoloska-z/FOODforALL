@@ -175,15 +175,9 @@
     width: 450px;
     height: 609px;
     position: absolute;
-    top: 70%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .modal {
-    top: 90%;
     }
 }
 
@@ -191,7 +185,6 @@
     .modal {
         width: 528px;
         height: 581px;
-        top: 70%;
     }
 
     .modal-slogan {
